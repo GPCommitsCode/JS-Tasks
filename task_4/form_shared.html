@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ <script src="./forms.js"></script>
+
+
+
+
+
+<body>
+
+<div class="container">
+  <h2>input form</h2>
+  <form action="#" id="myForm">
+
+  	<div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+
+     <div class="form-group">
+      <label>Date of Birth</label>
+      <input class="form-control" id="DOB1" placeholder="Date of Birth" type="date">
+    </div>
+
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    
+    <div class="form-group">
+       <label for="age">Age:</label>
+      <input type="number" class="form-control" id="age" placeholder="Enter age" name="age">
+    </div>
+
+   <div class="form-group">
+    <label for="address">Address</label>
+    <textarea class="form-control" id="address" rows="3"></textarea>
+   </div>
+  
+
+    <button type="submit" onclick="validateForm()" class="btn btn-default">Submit</button>
+
+  </form>
+
+  <p id="demo"></p>
+
+
+</div>
+
+create_heading();
+
+</body>
+
+
+
+
+</html>

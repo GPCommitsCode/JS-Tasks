@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+		  <title>Bootstrap Example</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		  
+
+</head>
+
+
+
+<body>
+ <div class="container">
+  <h2>input form</h2>
+  <form action="#" name="myForm">
+
+  	<div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" name="name1">
+    </div>
+
+     <div class="form-group">
+      <label>Date of Birth</label>
+      <input class="form-control" name="DOB" placeholder="Date of Birth" type="date">
+    </div>
+
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" name="email" placeholder="Enter email" name="email">
+    </div>
+    
+    <div class="form-group">
+       <label for="age">Age:</label>
+      <input type="number" class="form-control" name="age" placeholder="Enter age" name="age">
+    </div>
+
+   <div class="form-group">
+    <label for="address">Address</label>
+    <textarea class="form-control" name="address" rows="3"></textarea>
+   </div>
+  
+
+    <button type="submit" onclick="myFunction()" class="btn btn-default">Submit</button>
+
+  </form>
+
+  <p id="demo"></p>
+
+  <div class="table-responsive">          
+  <table class="table" id="table">
+  	<thead>
+      <tr>
+        <th>index</th>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+  </table>
+  </div>
+
+<div style="text-align: center;vertical-align: middle;">
+<a href="javascript:obj_table.prevPage()" id="btn_prev">Prev</a>
+<a href="javascript:obj_table.nextPage()" id="btn_next">Next</a>
+</div>
+
+
+</div>
+  <script src="forms_es5.js"></script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
